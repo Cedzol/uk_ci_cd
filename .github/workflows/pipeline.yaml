@@ -8,19 +8,13 @@
 # You can also reference a tag or branch, but the action may change without warning.
 
 name: Java CI
-
 on:
-
 #Manually trigger workflow runs
-
 workflow_dispatch:
-
 #Trigger the workflow on push from the main branch
-
 push:
 
 branches:
-
   - main
   - master
   - dev
