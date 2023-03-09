@@ -36,6 +36,7 @@ jobs:
           arguments: build
       - name: Test
         run: ./gradlew test --tests "*"
-
+      - name: Install newman
+        run: npm install -g newman
       - name: Run the API and Postman's tests
           run: newman run "collection.json"
