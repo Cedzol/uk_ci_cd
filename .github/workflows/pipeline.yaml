@@ -37,9 +37,9 @@ jobs:
       - name: Test
           run: ./gradlew test --tests "*"
 
-            - name: Test Success
-              if: success()
-              uses: actions/github-script@0.2.0
+      - name: Test Success
+        if: success()
+        uses: actions/github-script@0.2.0
               with:
                 github-token: ${{ github.token }}
                 script: |
